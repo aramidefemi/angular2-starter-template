@@ -1,0 +1,43 @@
+<div class="col-md-12" id="page-content">
+    <div class="col-md-3 hidden-xs hidden-sm">
+        <div class="panel">
+            <div class="panel-body">
+               <h3 class="text-capitalize text-primary unselectable " > {{about}} </h3>
+            </div>
+        </div>
+    </div>
+    <!--Searchbox-->
+    <div class="searchbox col-md-6 hidden-xs hidden-sm pull-right">
+        <div class="input-group custom-search-form">
+            <input class="form-control" placeholder="Search.." type="text"/>
+            <span class="input-group-btn">
+                <button class="text-muted" type="button">
+                    <i class="demo-pli-magnifi-glass">
+                    </i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="col-sm-12">
+            <!--Extra small weather widget-->
+            <!--===================================================-->
+            <div class="panel media middle">
+                <div class="media-left bg-primary pad-all">
+                    <i class="demo-pli-mail-favorite text-4x">
+                    </i>
+                </div>
+                <div class="media-body pad-lft">
+                    <p class="text-2x mar-no">
+                        {{pageTitle}}
+                    </p>
+                </div>
+            </div>
+            <my-app-timeline>
+                Loading...
+            </my-app-timeline>
+            <!--===================================================-->
+            <!--End Extra small weather widget-->
+        </div>
+    </div>
+</div>
