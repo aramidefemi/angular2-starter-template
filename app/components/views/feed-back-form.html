@@ -1,7 +1,7 @@
 <div class="panel">
     <div class="panel-heading">
         <h3 class="panel-title">
-         Feed Back Form
+            Feed Back Form 
         </h3>
     </div>
     <!--No Label Form-->
@@ -10,20 +10,17 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-4 mar-btm">
-                    <input class="form-control" placeholder="Name" type="text" />
-                
+                    <input [(ngModel)]="fb.name" name="name" class="form-control" placeholder="Name" type="text" />
                 </div>
                 <div class="col-md-8 mar-btm">
-                    <input class="form-control" placeholder="Email" type="email" />
-                  
+                    <input [(ngModel)]="fb.email" name="email" class="form-control" placeholder="Email" type="email" />
                 </div>
-               
             </div>
-            <textarea class="form-control" placeholder="Message" rows="3">
+            <textarea [(ngModel)]="fb.content" name="content" class="form-control" placeholder="Message" rows="3">
             </textarea>
         </div>
         <div class="panel-footer text-right">
-            <button class="btn btn-default">
+            <button  (click)="newFeedBack(fb)" class="btn btn-default">
                 Send message
             </button>
         </div>

@@ -12,30 +12,16 @@
 					                        <div class="timeline-header-title bg-info">Now</div>
 					                    </div>
 					
-					                    <div class="timeline-entry">
+					                    <div *ngFor="let feed of feeds" class="timeline-entry">
 					                        <div class="timeline-stat">
 					                            <div class="timeline-icon"><i class="demo-pli-office icon-2x"></i></div>
 					                            <div class="timeline-time">2 Hours ago</div>
 					                        </div>
 					                        <div class="timeline-label">
-					                            <p class="text-bold"><a href="#" class="text-danger">Job Meeting</a></p>
-					                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-					                        </div>
+					                            <p class="text-bold"><a href="#" class="text-danger">{{feed.username}}</a></p>
+					                            {{feed.content}}					                        </div>
 					                    </div>
-					                    <div class="timeline-entry">
-					                        <div class="timeline-stat">
-					                            <div class="timeline-icon"><img src="img/profile-photos/10.png" alt="Profile picture">
-					                            </div>
-					                            <div class="timeline-time">3 Hours ago</div>
-					                        </div>
-					                        <div class="timeline-label">
-					                            <p class="mar-no pad-btm">
-					                                <a href="#" class="btn-link text-semibold">Lisa D.</a> commented on
-					                                <a href="#" class="text-semibold"><i>The Article.</i></a>
-					                            </p>
-					                            <blockquote class="bq-sm bq-open mar-no">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</blockquote>
-					                        </div>
-					                    </div>
+					                  
 
 					                </div>
 					                <!--===================================================-->

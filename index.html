@@ -1,93 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
 
-    <head>
-       <!-- 1. Load libraries -->
-     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type" />
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js">
+        </script>
+    <script src="node_modules/zone.js/dist/zone.js">
+        </script>
+    <script src="node_modules/reflect-metadata/Reflect.js">
+        </script>
+    <script src="node_modules/systemjs/dist/system.src.js">
+        </script>
     <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
+    <script src="systemjs.config.js">
+        </script>
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-        <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <title>
-                    From Your Angle!
-                </title>
-                <!--STYLESHEET-->
-                <!--=================================================-->
-                <!--Open Sans Font [ OPTIONAL ]-->
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
-                    <!--Bootstrap Stylesheet [ REQUIRED ]-->
-                    <link href="css/bootstrap.min.css" rel="stylesheet">
-                        <!--Nifty Stylesheet [ REQUIRED ]-->
-                        <link href="css/nifty.min.css" rel="stylesheet">
-                            <!--Nifty Premium Icon [ DEMONSTRATION ]-->
-                            <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
-                                <!--JAVASCRIPT-->
-                                <!--=================================================-->
-                                <!--Pace - Page Load Progress Par [OPTIONAL]-->
-                                <link href="plugins/pace/pace.min.css" rel="stylesheet">
-                                    <script src="plugins/pace/pace.min.js">
+            System.import('app').catch(function(err){ console.error(err); });
+        </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        From Your Angle!
+    </title>
+    <!--STYLESHEET-->
+    <!--=================================================-->
+    <!--Open Sans Font [ OPTIONAL ]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="plugins/pace/pace.min.js">
                                     </script>
-                                    <!--jQuery [ REQUIRED ]-->
-                                    <script src="js/jquery-2.2.4.min.js">
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery-2.2.4.min.js">
                                     </script>
-                                    <!--BootstrapJS [ RECOMMENDED ]-->
-                                    <script src="js/bootstrap.min.js">
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js">
                                     </script>
-                                    <!--NiftyJS [ RECOMMENDED ]-->
-                                    <script src="js/nifty.min.js">
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="js/nifty.min.js">
                                     </script>
-                                    <!--=================================================-->
-                                </link>
-                            </link>
-                        </link>
-                    </link>
-                </link>
-            </meta>
-        </meta>
-    </head>
-    <!--TIPS-->
-    <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
-    <body>
-        <div class="effect aside-float aside-bright mainnav-out" id="container">
-            <!--NAVBAR-->
-            <!--===================================================-->
-  <my-app-nav> </my-app-nav>
-            <!--===================================================-->
-            <!--END NAVBAR-->
-            <div class="boxed">
-                <!--CONTENT CONTAINER-->
-                <!--===================================================-->
-                <div id="content-container">
-                    <!--Page Title-->
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <my-app> <h2 class="text-center text-primary text-uppercase" > Please wait while page loads... </h2> </my-app>
-                    <!--===================================================-->
-                    <!--End page content-->
-                </div>
-     
-              <hr class="col-md-12" /> 
-              <br /> 
-            </div>
-            <!-- FOOTER -->
-            <!--===================================================-->
-            <my-app-footer> </my-app-footer>
-   
-            <!--===================================================-->
-            <!-- END FOOTER -->
-            <!-- SCROLL PAGE BUTTON -->
-            <!--===================================================-->
-          
-            <!--===================================================-->
-        </div>
+    <!--=================================================-->
+  
+</head>
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
+<body>
+    <div class="effect aside-float aside-bright mainnav-out" id="container">
+        <!--NAVBAR-->
         <!--===================================================-->
-        <!-- END OF CONTAINER -->
-    </body>
-    </html>
+        <header id="navbar">
+            <div class="boxed" id="navbar-container">
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Nifty Logo" class="brand-icon" src="img/logo.png" />
+                        <div class="brand-title">
+                            <span class="brand-text">
+                                    Ur<strong>Angle</strong>
+                                </span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-right">
+                        <li>
+                            <a class="aside-toggle navbar-aside-icon" href="#">
+                                <i class="pci-ver-dots">
+                                    </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+            </div>
+        </header>
+
+        <!--===================================================-->
+        <!--END NAVBAR-->
+        <!--CONTENT CONTAINER-->
+        <!--===================================================-->
+        <div class="no-padding" id="content-container">
+            <!--Page Title-->
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="row no-padding" id="page-content">
+                <!--Searchbox-->
+                <div class="searchbox col-md-3 hidden-xs hidden-sm pull-right">
+
+                    <div class="input-group custom-search-form">
+                        <input class="form-control" placeholder="Search.." type="text" />
+                        <span class="input-group-btn">
+                <button class="text-muted" type="button">
+                    <i class="demo-pli-magnifi-glass">
+                    </i>
+                </button>
+            </span>
+                    </div>
+                
+                </div>
+                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 no-padding">
+                    <div class="row ">
+                        <!--Extra small weather widget-->
+                        <!--===================================================-->
+                        <div class="panel media middle">
+                            <div class="media-left bg-primary pad-all">
+                                <i class="demo-pli-mail-favorite text-4x">
+                    </i>
+                            </div>
+                            <div class="media-body pad-lft">
+                                <p class="text-2x mar-no">
+                                    Help Us See Things From Your Angle !
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                      
+                        <my-app-timeline>
+                            Loading...
+                        </my-app-timeline>
+                        <!--===================================================-->
+                        <!--End Extra small weather widget-->
+                    </div>
+                </div>
+            </div>
+
+            <!--===================================================-->
+            <!--End page content-->
+        </div>
+
+        <hr class="col-md-12" />
+        <br/>
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+            <!-- Visible when footer positions are fixed -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="show-fixed pull-right">
+            </div>
+            <!-- Visible when footer positions are static -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="hide-fixed pull-right pad-rgt">
+                Happy
+                <strong>
+                        Free
+                    </strong> Strong
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <p class="pad-lft">
+                <strong>
+                         Ur<strong>Angle</strong>
+                </strong>
+            </p>
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <!--===================================================-->
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+</body>
+
+</html>
